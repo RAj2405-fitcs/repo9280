@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        marquee{
+    color: brown;
+    border: solid 10px crimson;
+}
+*{
+    background-color: beige;
+}
+nav,ul,li{
+    display: inline;
+   margin-left: 100px;
+   color: rgb(85, 126, 202);
+
+}
+nav,ul,li:hover{
+    color: rgb(93, 176, 179);
+    
+}
+form{
+    margin-left: 85%;
+}
+
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3,2fr);
+            row-gap: 10px;
+            column-gap: 10px;
+            margin-top: 100px;
+            
+        }
+        .grid-item{
+            background-color: rgb(165, 143, 17);
+            color: chocolate;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        .grid-container:hover{
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+            color: crimson;
+
+
+        }
+        .grid-item img {
+            width: 90%;
+            height: 90%;
+            object-fit: cover; /* Ensures images fit without distortion */
+            border-radius: 5px;
+        }
+        @media (max-width: 786px) {
+            .grid-container {
+                background: lightgreen;
+                grid-template-columns: repeat(2,1fr);
+                font-size: 20px;
+            }
+        }
+        div{
+            background-color: darkgoldenrod;
+            width: 100%;
+            height: 100%;
+            
+
+        }
+        
+        nav a{
+            text-decoration: none;
+        }
+        nav a:hover{
+            text-decoration: underline;
+        }
+        header>nav>li{
+            background-color: cornflowerblue;
+        }
+        footer{
+            background-color: darksalmon;
+            color: brown;
+            
+        }
+        div{
+            top: 10px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+<label for="outfit">Choose a outfit:</label>
+<select id="outfit" name="outfit">
+    <option value="dress"></option>
+    <option value="denims">denims</option>
+    <option value="tees">tees</option>
+    <option value="bottoms">bottoms</option>
+</select>
+
+    <marquee dirct="left"scroll amount="10"><h1>My Virtual Stylist</h1></marquee>
+    
+    <header>
+        <nav>
+            
+                <li> <a href="table.html" target="_self">LOGIN WITH US</a></li>
+            
+        </nav>
+    </header>
+    <header>
+         <nav>
+        <ul>
+            <li><b> <u>Get your styling idea</u></b></li>
+            <li><a href="womens.html" target="_self">WOMENS</a></li>
+            <li><a href="mens.html"target="_self">MENS</a></li>
+            <li><a href="accesories.html"target="_self">ACCESORIES</a></li>
+
+        </ul>
+    </nav>
+    </header>
+    <div class="chat-button" onclick="toggleChat()">💬 Chat</div>
+
+    <!-- Chat Box -->
+     
+    <div class="chat-box" id="chatBox">
+        <div class="chat-header">
+            <span>Live Support</span>
+            <button class="close-btn" onclick="toggleChat()">✖</button>
+        </div>
+        <div class="chat-body">
+            <div class="message support">Hello! How can we assist you?</div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="chatInput" placeholder="Type a message..." />
+            <button onclick="sendMessage()">➤</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+    <div class="grid-container">
+        <div class="grid-item"><img src="5.jpg" width="100px" height="100px"><a href="https://www.snitch.com" target="_self"><br>Mens wear</a></div>
+        <div class="grid-item"><img src="3.jpg" width="80px" height="80px"><a href="https://www.savana.com" target="_self">Womens wear</a></div>
+        <div class="grid-item"><img src="13.jpg" width="80px" height="80px"><a href="https://www.Firstcry.com" target="_self">Kids wear</a></div>
+        <div class="grid-item"><img src="4.jpg" width="80px"height="80px"><a href="https://www.Giva.com" target="_self">Acessories</a></div>
+        <div class="grid-item"><img src="12.jpg"width="80px"height="80px"><a href="https://www.sugar.com" target="_self">Makeup essential</a></div>
+        <div class="grid-item"><img src="14.jpg"width="80px"height="80px"><a href="https://www.ikea.com" target="_self">Home Decor</a></div>
+    </div>
+    
+    
+
+    <script src="script.js"></script>
+    
+    <footer>
+        <p>© 2025 Virtual Wardrobe</p>
+        <p>contact us</p>
+        <pre><p>about me
+            I am a incredible website that helps fashion enthusiasts to find their soulful otfit.
+            by making their special day very memorable.fashion enthusiasts can find affordable and soulful
+            outfit for themselve by using our extraordinary features of visiting different website for buying
+            different outfits.
+        </p></pre>
+    </footer>
+    
+</body>
+</html>
+        
+        

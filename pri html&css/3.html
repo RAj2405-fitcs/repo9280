@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Chat Support</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Chat Button -->
+    <div class="chat-button" onclick="toggleChat()">💬 Chat</div>
+
+    <!-- Chat Box -->
+    <div class="chat-box" id="chatBox">
+        <div class="chat-header">
+            <span>Live Support</span>
+            <button class="close-btn" onclick="toggleChat()">✖</button>
+        </div>
+        <div class="chat-body">
+            <div class="message support">Hello! How can we assist you?</div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="chatInput" placeholder="Type a message..." />
+            <button onclick="sendMessage()">➤</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
